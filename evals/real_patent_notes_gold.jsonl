@@ -1,0 +1,13 @@
+{"query":"Which patent covers a robotic gripper with finger-mounted multimodal tactile sensing?","gold_docs":["patent_real_note_us11433555b2"],"answerable":true}
+{"query":"What publication uses hierarchical sensor architecture with central processing in gripper fingers?","gold_docs":["patent_real_note_us11433555b2"],"answerable":true}
+{"query":"What publication mentions pressure, temperature, vibration and proximity in robot manipulation?","gold_docs":["patent_real_note_us11433555b2"],"answerable":true}
+{"query":"Which filing involves a serial bus connecting tactile finger sensors and robot controls?","gold_docs":["patent_real_note_us11433555b2"],"answerable":true}
+{"query":"Which patent application proposes a crystal portion along an inner granular surface of sulfide electrolyte?","gold_docs":["patent_real_note_us20240243351a1"],"answerable":true}
+{"query":"Which filing features a lithium phosphorus sulfur oxygen electrolyte with moisture-resistance claims?","gold_docs":["patent_real_note_us20240243351a1"],"answerable":true}
+{"query":"What publication addresses lithium-ion conductivity declining under moisture using internally oriented crystals?","gold_docs":["patent_real_note_us20240243351a1"],"answerable":true}
+{"query":"Which patent proposes tetravalent and hexavalent transition metal doping for argyrodite electrolytes?","gold_docs":["patent_real_note_us20250140912a1"],"answerable":true}
+{"query":"Which filing addresses hydrogen sulfide from sulfide hydrolysis through element doping?","gold_docs":["patent_real_note_us20250140912a1"],"answerable":true}
+{"query":"What patent publication covers argyrodite moisture stability and electrolyte interfacial properties?","gold_docs":["patent_real_note_us20250140912a1"],"answerable":true}
+{"query":"What patent describes a superconducting quantum computer based on flux qubits?","gold_docs":[],"answerable":false}
+{"query":"Which filing describes a portable espresso machine using capsule pressure?","gold_docs":[],"answerable":false}
+{"query":"Which patent covers an acoustic submarine sonar array?","gold_docs":[],"answerable":false}

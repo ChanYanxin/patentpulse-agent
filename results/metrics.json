@@ -1,0 +1,103 @@
+{
+  "dataset": "synthetic hand-authored demo queries",
+  "corpus_documents": 23,
+  "total_queries": 20,
+  "answerable_queries": 16,
+  "unanswerable_queries": 4,
+  "methods": {
+    "word": {
+      "hit_at_3": 0.75,
+      "mrr": 0.7188,
+      "correct_abstention_rate": 1.0,
+      "failures": [
+        {
+          "query": "硫化物电解质为什么对湿度敏感，有哪些界面挑战？",
+          "retrieved": [],
+          "gold": [
+            "sulfide_electrolyte"
+          ]
+        },
+        {
+          "query": "锂枝晶短路要如何诊断，临界电流密度是什么？",
+          "retrieved": [],
+          "gold": [
+            "dendrite_failure"
+          ]
+        },
+        {
+          "query": "钙钛矿太阳能电池界面钝化和水氧稳定性",
+          "retrieved": [],
+          "gold": [
+            "perovskite_stability"
+          ]
+        },
+        {
+          "query": "对比硫化物和氧化物固态电解质的界面阻抗及制造挑战",
+          "retrieved": [],
+          "gold": [
+            "sulfide_electrolyte",
+            "oxide_electrolyte"
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "hit_at_3": 1.0,
+      "mrr": 0.9688,
+      "correct_abstention_rate": 1.0,
+      "failures": []
+    },
+    "bm25": {
+      "hit_at_3": 0.9375,
+      "mrr": 0.9375,
+      "correct_abstention_rate": 0.25,
+      "failures": [
+        {
+          "query": "How does moisture exposure affect sulfide solid electrolytes?",
+          "retrieved": [
+            "patent_real_note_us20240243351a1",
+            "patent_real_note_us20250140912a1",
+            "patent_demo_sulfide_cell"
+          ],
+          "gold": [
+            "sulfide_electrolyte"
+          ]
+        },
+        {
+          "query": "What is the capital of Uruguay?",
+          "retrieved": [
+            "real_matsciagent_2026",
+            "patent_real_note_us20240243351a1",
+            "patent_demo_organic_pv"
+          ],
+          "gold": []
+        },
+        {
+          "query": "How many rings does Neptune have?",
+          "retrieved": [
+            "mcp_security",
+            "dendrite_failure",
+            "patent_real_note_us11433555b2"
+          ],
+          "gold": []
+        },
+        {
+          "query": "Tell me the cooking time for french macarons",
+          "retrieved": [
+            "real_chateda_2023",
+            "real_lisa_2025",
+            "real_autosee_2026"
+          ],
+          "gold": []
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "This is a small synthetic corpus with manually-authored benchmark questions.",
+    "Hybrid is word + character TF-IDF, NOT dense embedding retrieval or reranking.",
+    "BM25 is an independent lexical baseline; RRF support exists but requires an actual dense retriever to evaluate fusion.",
+    "Metrics evaluate retrieval only, NOT factual answer quality or real production performance.",
+    "No baseline or improvement claim should be made until numbers are inspected."
+  ]
+}

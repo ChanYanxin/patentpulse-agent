@@ -1,0 +1,16 @@
+{"query":"sulfide battery moisture barrier desiccant indicator","gold_docs":["patent_demo_sulfide_cell"],"answerable":true}
+{"query":"dry protection housing for sulfide solid electrolyte cathode","gold_docs":["patent_demo_sulfide_cell"],"answerable":true}
+{"query":"interface buffer layer sulfide electrolyte contact resistance","gold_docs":["patent_demo_sulfide_cell"],"answerable":true}
+{"query":"robotic gripper tactile sensor torque limited actuator","gold_docs":["patent_demo_gripper"],"answerable":true}
+{"query":"grasp slip force feedback robotic fingers","gold_docs":["patent_demo_gripper"],"answerable":true}
+{"query":"inertial sensor unintended object movement manipulation","gold_docs":["patent_demo_gripper"],"answerable":true}
+{"query":"organic photovoltaic donor acceptor active film","gold_docs":["patent_demo_organic_pv"],"answerable":true}
+{"query":"solar cell low temperature annealing morphology oxygen ingress","gold_docs":["patent_demo_organic_pv"],"answerable":true}
+{"query":"transparent conductive electrode charge extraction organic solar","gold_docs":["patent_demo_organic_pv"],"answerable":true}
+{"query":"semiconductor wafer multispectral illumination optical defect","gold_docs":["patent_demo_semiconductor_inspection"],"answerable":true}
+{"query":"wafer defect reference image confidence threshold human inspection","gold_docs":["patent_demo_semiconductor_inspection"],"answerable":true}
+{"query":"neural network image processing surface defects semiconductor metrology","gold_docs":["patent_demo_semiconductor_inspection"],"answerable":true}
+{"query":"medieval tapestry monarchy succession","gold_docs":[],"answerable":false}
+{"query":"marine zoology plankton migration behavior","gold_docs":[],"answerable":false}
+{"query":"paleontology dinosaur fossils geology","gold_docs":[],"answerable":false}
+{"query":"sourdough bread fermentation baking","gold_docs":[],"answerable":false}

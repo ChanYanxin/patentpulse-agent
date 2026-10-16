@@ -1,0 +1,138 @@
+{
+  "corpus": "3 real patent IDs, author-paraphrased summaries, NOT full patent claims",
+  "labeling": "13 author-written questions, no independent test-set annotation",
+  "n_documents": 3,
+  "n_queries": 13,
+  "positive_queries": 10,
+  "negative_queries": 3,
+  "methods": {
+    "word": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "mrr": 1.0,
+      "ood_correct_rejection": 1.0,
+      "failures": []
+    },
+    "hybrid": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "mrr": 1.0,
+      "ood_correct_rejection": 1.0,
+      "failures": []
+    },
+    "bm25": {
+      "hit_at_1": 0.9,
+      "hit_at_3": 1.0,
+      "mrr": 0.95,
+      "ood_correct_rejection": 1.0,
+      "failures": []
+    }
+  },
+  "ablation_without_evidence_gate": {
+    "word": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "mrr": 1.0,
+      "ood_correct_rejection": 0.0,
+      "failures": [
+        {
+          "query": "What patent describes a superconducting quantum computer based on flux qubits?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us11433555b2"
+          ]
+        },
+        {
+          "query": "Which filing describes a portable espresso machine using capsule pressure?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us11433555b2"
+          ]
+        },
+        {
+          "query": "Which patent covers an acoustic submarine sonar array?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us20240243351a1",
+            "patent_real_note_us11433555b2"
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "mrr": 1.0,
+      "ood_correct_rejection": 0.0,
+      "failures": [
+        {
+          "query": "What patent describes a superconducting quantum computer based on flux qubits?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us11433555b2"
+          ]
+        },
+        {
+          "query": "Which filing describes a portable espresso machine using capsule pressure?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us11433555b2"
+          ]
+        },
+        {
+          "query": "Which patent covers an acoustic submarine sonar array?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us11433555b2",
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us20240243351a1"
+          ]
+        }
+      ]
+    },
+    "bm25": {
+      "hit_at_1": 0.9,
+      "hit_at_3": 1.0,
+      "mrr": 0.95,
+      "ood_correct_rejection": 0.0,
+      "failures": [
+        {
+          "query": "What patent describes a superconducting quantum computer based on flux qubits?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us11433555b2",
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us20240243351a1"
+          ]
+        },
+        {
+          "query": "Which filing describes a portable espresso machine using capsule pressure?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us11433555b2",
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us20240243351a1"
+          ]
+        },
+        {
+          "query": "Which patent covers an acoustic submarine sonar array?",
+          "issue": "retrieved_on_unknown",
+          "returned": [
+            "patent_real_note_us20250140912a1",
+            "patent_real_note_us20240243351a1",
+            "patent_real_note_us11433555b2"
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Three short summaries authored by the evaluator, rather than actual patent full texts.",
+    "All questions and gold doc IDs were written with knowledge of the corpus: data leakage risk.",
+    "OOD rule is empty retrieval, not calibrated legal evidence sufficiency.",
+    "This is not Ragas Faithfulness, real-model answer accuracy or patent novelty evaluation."
+  ]
+}
